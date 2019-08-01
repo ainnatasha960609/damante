@@ -1,0 +1,68 @@
+page-about {
+    ion-content{
+       
+     
+        background: #e4e0cf !important;
+    }
+.bg {
+    background:linear-gradient(to bottom, #904779 0% #fff)
+}
+    div{
+        text-align: center;
+    }
+    
+    div.margin{
+        margin-top: 1cm;
+    
+       
+    }
+
+    ion-card {
+        border-radius:20px !important;
+        }
+    #map {
+        width: auto;
+        height: 40%;
+    }
+ 
+    
+        h2 {
+            font-size:20px;
+            font-weight:bold;
+            text-align:center;
+            color:#10425a;
+            font-family: "Times New Roman", Times, serif; 
+        
+        }
+
+        #rounded {
+            width: 300px;
+            height: 30px;
+            -moz-border-radius: 50px;
+            -webkit-border-radius: 50px;
+            border-radius: 10px;
+            margin-bottom: 8px;  
+            margin-left: 0.5cm;
+            margin-right: 0.5cm;
+            text-align:justify;
+        }
+
+        h6 {
+            font-size:15px;
+            font-weight:bold;
+            text-align:center;
+            color:#10425a;
+            font-family: "Times New Roman", Times, serif; 
+        
+        }
+
+        h1 {
+            font-size:5px;
+            font-weight:bold;
+            text-align:center;
+            color:#10425a;
+            font-family: "Times New Roman", Times, serif; 
+        
+        }
+
+}

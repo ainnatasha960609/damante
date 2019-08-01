@@ -1,0 +1,60 @@
+<!--
+  Generated template for the NotificationPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar color="secondary">
+    <ion-title>
+
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content>
+
+
+  <ion-item padding color="secondary">Device Alert Notification</ion-item><br><br>
+  <ion-card>Legend:<br><br>
+    &nbsp; &nbsp; &nbsp; <ion-img style="width: 5px; height: 5px;" src="../assets/imgs/colour1.jpg">&nbsp; &nbsp;&nbsp;
+    </ion-img>
+    &nbsp;&nbsp;&nbsp; Moderate<br>
+    <ion-img style="width: 5px; height: 5px;" src="../assets/imgs/colour2.jpg">&nbsp; &nbsp; &nbsp; </ion-img>
+    &nbsp;&nbsp;&nbsp;&nbsp; Heavy<br>
+    <ion-img style="width: 5px; height: 5px;" src="../assets/imgs/colour3.png">&nbsp; &nbsp; &nbsp; </ion-img>
+    &nbsp;&nbsp;&nbsp; Critical<br><br>
+  </ion-card>
+  
+      <ion-card *ngFor="let item of items | paginate: { itemsPerPage: 10, currentPage: p }">
+    <div *ngIf="item.type == 'Moderate' " class="moderate">
+
+      No. :{{ item.No }} <p></p> Date: {{item.dateTime}}<p></p>
+      Description : {{item.message}}<p></p> Equipment Name / ID : {{item.e_name && item.e_ID}} <p></p> Sensor ID :
+      {{item.sensor_ID}}<p></p>
+      Reading Type / Value : {{item.read_type}} <p></p> Location : {{item.location_name}} <p></p> Status : {{item.type}}
+<br><br>
+    </div>
+    <div *ngIf="item.type == 'Heavy'" class="heavy">
+
+      No. :{{ item.No }} <p></p> Date: {{item.dateTime}}<p></p>
+      Description : {{item.message}}<p></p> Equipment Name / ID : {{item.e_name && item.e_ID}} <p></p> Sensor ID :
+      {{item.sensor_ID}}<p></p>
+      Reading Type / Value : {{item.read_type}} <p></p> Location : {{item.location_name}} <p></p> Status : {{item.type}}
+      <br><br>
+    </div>
+    <div *ngIf="item.type == 'Critical'  " class="critical">
+
+      No. :{{ item.No }} <p></p> Date: {{item.dateTime}}<p></p>
+      Description : {{item.message}}<p></p> Equipment Name / ID : {{item.e_name && item.e_ID}} <p></p> Sensor ID :
+      {{item.sensor_ID}}<p></p>
+      Reading Type / Value : {{item.read_type}} <p></p> Location : {{item.location_name}} <p></p> Status : {{item.type}}
+      <br><br>
+    </div>
+  </ion-card>
+
+  <br>
+  <ion-card color="secondary">
+    <pagination-controls (pageChange)="p = $event"></pagination-controls>
+  </ion-card>

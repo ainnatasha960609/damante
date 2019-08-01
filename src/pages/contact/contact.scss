@@ -1,0 +1,43 @@
+page-contact {
+    ion-content{
+       
+     
+        background: #e4e0cf !important;
+    }
+.bg {
+    background:linear-gradient(to bottom, #904779 0% #fff)
+}
+    div{
+        text-align: center;
+    }
+    ion-card {
+        border-radius:20px !important;
+        }
+    div.margin{
+        margin-top: 1cm;
+    
+       
+    }
+
+    
+    #map {
+        width: auto;
+        height: 40%;
+    }
+    h6 {
+        font-size:15px;
+        font-weight:bold;
+        text-align:center;
+        color:#10425a;
+        font-family: "Georgia", Times, serif; 
+    
+    }
+    h1 {
+        font-size:10px;
+        font-weight:bold;
+        text-align:center;
+        color:#10425a;
+        font-family: "Times New Roman", Times, serif; 
+    
+    }
+}

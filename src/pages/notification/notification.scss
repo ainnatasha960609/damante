@@ -1,0 +1,56 @@
+page-notification {
+    ion-content{
+       
+     
+        background: #e4e0cf !important;
+    }
+.bg {
+    background:linear-gradient(to bottom, #904779 0% #fff)
+}
+    div{
+        text-align: center;
+    }
+
+    
+div.margin{
+    margin-top: 0cm;
+
+   
+}
+ion-card {
+    border-radius:15px !important;
+    }
+.card-fixed{
+    height: 20%;
+
+}
+h6 {
+    font-size:15px;
+    font-weight:bold;
+    text-align:center;
+    color:#10425a;
+    font-family: "Times New Roman", Times, serif; 
+
+}
+
+h2 {
+    font-size:18px;
+    font-weight:bold;
+    text-align:center;
+    color:#10425a;
+    font-family: "Times New Roman", Times, serif; 
+
+}
+
+.moderate{
+    background-color: #FFFF00; 
+}
+
+.heavy{
+    background-color: #FFA500
+}
+
+.critical{
+    background-color: rgb(255, 0, 0)
+}
+}
